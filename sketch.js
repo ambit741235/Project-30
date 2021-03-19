@@ -170,3 +170,10 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+//Function to specify certain Event to occur when a key is Pressed
+function keyPressed(){
+    if(keyCode === 32){
+        slingshot.attach(polygon);
+    }
+}
